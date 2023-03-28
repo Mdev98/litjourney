@@ -10,6 +10,7 @@
 }
 
 a {
+    color: inherit;
     text-decoration: none;
 }
 
@@ -23,11 +24,14 @@ header {
     width: 100vw;
 }
 
+.menu {
+    display: none;
+}
+
 #hamburger {
     background-color: #1e345d;
     height: 10px;
     width: 50px;
-    position: relative;
     position: absolute;
     right: 20px;
 }
@@ -137,6 +141,7 @@ section {
 .illustration img  {
     max-width: 100%;
     height: auto;
+    border-radius: 40px;
 }
 
 #call-to-action {
@@ -152,6 +157,10 @@ section {
 
 .wrapper {
     padding: 20px 0px;
+}
+
+.ordered-items {
+    list-style: decimal;
 }
 
 .paragraphe-items {
@@ -182,3 +191,134 @@ details {
 
 
 
+@media (min-width: 1250px) {
+
+    header {
+        width: 100%;
+    }
+
+    .logo {
+        top: 0;
+        left: 20px;
+        transform: translateX(0);
+    }
+
+    .logo img {
+        width: 7vw;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .nav-menu {
+        display: flex;
+    }
+
+    .options {
+        flex: 1;
+    }
+
+    .link {
+        font-weight: bold;
+        color: var(--blue);
+    }
+
+    #nav_call-to-action {
+        background-color: var(--blue);
+        color: #fff;
+        padding: 10px;
+    }
+    #hamburger {
+        position: absolute;
+        width: 75%;
+        background-color: initial;
+        right: 0;
+    }
+
+    #hamburger::after {
+        content: none;
+    }
+    #hamburger::before {
+        content: none;
+    }
+
+    .hero {
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .hero-title {
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        width: 75%;
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        font-size: 6.5rem;
+    }
+
+    .hero-title span {
+        font-size: 10rem;
+    }
+
+    section {
+        padding: 10px 80px;
+        margin-top: 50px;
+    }
+
+    .section_to_flex {
+        display: flex;
+    }
+    
+
+    .section_to_flex > * {
+        flex: 1;
+    }
+
+    
+    .illustration {
+        width: 450px;
+        margin-right: 30px;
+    }
+
+    .section_to_float .illustration {
+        float: left;
+    }
+
+    .title {
+        font-size: 3rem;
+        text-align: left;
+    }
+
+    #to_center_desk {
+        text-align: center;
+    }
+
+    .paragraphe {
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    #call-to-action {
+        font-size: 2rem;
+        padding: 15px 20px;
+    }
+    details {
+        padding: 30px;
+    }
+    .faq-title {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+    .faq-option {
+        padding: 10px 20px;
+        font-size: 1.3rem;
+    }
+    
+}
