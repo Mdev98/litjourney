@@ -178,15 +178,30 @@ details {
     border-radius: 20px;
 }
 
+#FAQ .title {
+    text-align: left;
+    /* margin-bottom: 10px; */
+}
+
 .faq-option {
     padding-left: 20px;
     padding-top: 5px;
 }
 
-.faq-title {
-    font-size: 1.3rem;
+.faq-option {
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+
+details p{
+    padding-left: 20px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.faq-option span {
     font-weight: bold;
-    margin-top: 0;
 }
 
 #contact {
