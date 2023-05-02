@@ -178,12 +178,9 @@ details {
     border-radius: 20px;
 }
 
-#FAQ .title {
-    text-align: left;
-    /* margin-bottom: 10px; */
-}
 
-.faq-option {
+
+/* .faq-option {
     padding-left: 20px;
     padding-top: 5px;
 }
@@ -191,7 +188,7 @@ details {
 .faq-option {
     padding-left: 20px;
     padding-top: 5px;
-}
+} */
 
 
 details p{
@@ -200,9 +197,9 @@ details p{
     margin-top: 20px;
 }
 
-.faq-option span {
+/* .faq-option span {
     font-weight: bold;
-}
+} */
 
 #contact {
     background-color: var(--blue);
@@ -350,15 +347,15 @@ details p{
     details {
         padding: 30px;
     }
-    .faq-title {
+    /* .faq-title {
         font-size: 1.8rem;
         font-weight: bold;
         margin-top: 0;
-    }
+    } */
 
-    .faq-option {
+    /* .faq-option {
         padding: 10px 20px;
         font-size: 1.3rem;
-    }
+    } */
     
 }
